@@ -1,0 +1,17 @@
+# Riippuvuudet ja käännöstulokset
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.vite/
+
+# Paikalliset asetukset ja salaisuudet
+.env
+.env.*
+!.env.example
+*.local
+
+# Lokit ja käyttöjärjestelmän tiedostot
+*.log
+.DS_Store
+Thumbs.db

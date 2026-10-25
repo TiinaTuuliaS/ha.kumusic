@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#eeeced" />
+    <meta name="description" content="ha.ku – oma selainpohjainen musiikkistudio." />
+    <title>ha.ku</title>
+    <script>
+      // Apply the theme before the first paint to avoid a bright flash.
+      let savedTheme;
+      try { savedTheme = localStorage.getItem('haku-theme'); } catch {}
+      const theme = savedTheme === 'light' || savedTheme === 'dark'
+        ? savedTheme
+        : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = theme;
+      document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#242129' : '#eeeced';
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
