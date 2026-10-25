@@ -1,0 +1,47 @@
+KEHITYSLOKI — ha.ku
+
+25.10.2026
+- Aloitettiin projekti: React + TypeScript + Vite frontend-kansioon.
+- Lisättiin tulevan NestJS-backendin README, projektiohjeet ja .gitignore.
+- Nimettiin sovellus ha.kuksi ja rakennettiin Y2K / Windows 95 -henkinen ulkoasu.
+- Lisättiin vaalea ja tumma teema sekä selaimessa säilyvä teemavalinta.
+- Viimeisteltiin värejä: lila, lime ja oranssi sekä logon liukuväri.
+- Aseteltiin etusivun logo vasemmalle ja kuvakkeet oikealle ikkunamaiseen laatikkoon.
+- Luotiin omat sivut Studiolle, Omille soundeille, Uudelle idealle ja Omille ideoille.
+- Toteutettiin tekstipohjainen moodboard ja muistiinpanojen tallennus sekä muokkaus.
+- Rakennettiin viiden raidan, 16 askeleen biittiruudukko.
+- Tehtiin omat synteettiset kick-, virveli-, taputus-, hi-hat- ja bassoäänet Web Audiolla.
+- Lisättiin toisto, pysäytys, tempo ja soivan askeleen korostus.
+- Lisättiin basson askelkohtaiset sävelvalinnat C2–B2 ja sävelten esikuuntelu.
+- Lisättiin raitakohtaiset toisto- ja taukopainikkeet sekä äänenvoimakkuudet.
+- Tehtiin vierityksessä näkyvä Toista kaikki / Pysäytä -palkki.
+- Tiivistettiin sivujen ja ruudukon asettelua vierityksen vähentämiseksi.
+- Toteutettiin soundien selainkohtainen tallennus ja avaaminen Omat soundit -kirjastosta.
+- Tallennukseen sisältyvät nimi, askeleet, basson sävelet, tempo ja voimakkuudet.
+- Tarkistettiin frontendin build; kaikki 13 automaattista testiä läpäisivät tarkistuksen.
+- Käyttäjä testasi äänet ja toistopalkin toimiviksi selaimessa.
+- Käyttäjä testasi soundien selainkohtaisen tallennuksen toimivaksi.
+- Lisättiin soundien JSON-vienti ja -tuonti varmuuskopiointiin ja siirtoon.
+- Tuonti tarkistaa tiedoston ja luo uuden tallennuksen korvaamatta aiempia.
+- Lisättiin Studioon kuunneltava WAV-vienti: neljä tahtia ja äänten vaimeneminen.
+- WAV käyttää samoja synteettisiä ääniä, säveliä, tempoa ja voimakkuuksia kuin Studio.
+- Lisättiin WAV-lataus myös Omat soundit -kirjastoon JSON-viennin rinnalle.
+- Kirjattiin genrekohtaiset äänimaailmat ja kolme äänilähdetyyppiä AANIMAAILMAT.md-tiedostoon.
+- Lisättiin lyhyen WAV-rumpusamplen tuonti, esikuuntelu ja äänilähteen valinta.
+- Omat samplet toimivat istunnon toistossa ja Studion WAV-viennissä; pysyvä tallennus on seuraava vaihe.
+- Toteutettiin samplejen ja äänilähdevalintojen pysyvä tallennus IndexedDB-selainkirjastoon.
+- Lisättiin samplejen äänidata JSON-varmuuskopioon ja palautus tiedostosta.
+- Kirjaston WAV-vienti käyttää nyt myös tallennettuja omia sampleja.
+- Säilytettiin yhteensopivuus vanhojen selainkirjastojen ja JSON-projektien kanssa.
+- Lisättiin kaksi itsenäistä rytmikuviota A/B ja kopiointi kuvioiden välillä.
+- Molemmilla kuvioilla on omat askeleet ja basson sävelet; tempo ja äänet ovat yhteiset.
+- Kuviot tallentuvat projektiin ja JSON-varmuuskopioon; kummankin voi viedä WAViksi.
+- Vanhojen projektien rytmi avautuu kuviona A. Build ja kaikki 23 testiä onnistuivat.
+- Lisättiin neljän tahdin A/B-soittojärjestys ja automaattinen vaihto tahdin rajalla.
+- Toistopalkki näyttää soivan tahdin ja kuvion; muokattava kuvio valitaan erikseen.
+- Järjestys tallentuu selainkirjastoon ja JSON-tiedostoon sekä on vietävissä WAViksi.
+- Testattiin A–A–A–B-toisto, paluu alkuun ja järjestyksen tallennus; kaikki 26 testiä läpäisivät tarkistuksen.
+- Uuden työn oletusjärjestys on A–A–A–B; jokaisen neljän tahdin kuvion voi valita erikseen.
+- Erotettiin valitun kuvion kuuntelu ja koko soittojärjestyksen toisto omiksi toiminnoikseen.
+- Lisättiin Lataa WAV · järjestys Studioon ja Omat soundit -kirjastoon.
+- Päivitettiin JSON-projektimuoto versioon 4; aiemmat versiot 1–3 ovat edelleen tuettuja.
